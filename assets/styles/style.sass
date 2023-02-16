@@ -6,16 +6,19 @@
     margin: 0
     padding: 0
     box-sizing: inherit
+    -webkit-tap-highlight-color: transparent
 
 body
     font-family: 'Poppins', sans-serif
     font-size: 100%
     box-sizing: border-box
     overflow-x: hidden
+    height: 4000px
 
 // variables
 $white: #fff
 $black: #000
+$blue: #2B5D84
 
 // classes
 .display-flex
@@ -27,4 +30,82 @@ $black: #000
 .display-block
     display: block !important
 
+.burger-change
+    .burger-line:first-of-type
+        transform: rotate(45deg) translateY(.5rem)
+    .burger-line:nth-of-type(2)
+        transform: rotate(-45deg) translateY(-.5rem)
+    .burger-line:last-of-type
+        display: none
+
+.translateX-0
+    transform: translateX(0) !important 
+
 // actual styling
+#header-nav
+    display: flex
+    justify-content: flex-end
+    padding: 2rem
+    background: $blue
+    #header-ul
+        position: absolute
+        display: none
+        flex-direction: column
+        justify-content: center
+        gap: 4rem
+        width: 100%
+        height: 100vh
+        margin: -2rem
+        padding: 3rem 5rem
+        list-style: none
+        background: lighten($blue, 10%)
+        transform: translateX(100%)
+        transition: all 200ms ease-out
+        li
+            a
+                font-weight: 700
+                font-size: 2rem
+                text-decoration: none
+                color: $white
+                transition: color 200ms linear
+                &:hover
+                    text-decoration: underline
+                    color: darken($white, 30%)
+            #active-link
+                text-decoration: underline
+    .burger-menu
+        display: flex
+        flex-direction: column
+        gap: .5rem
+        width: 2rem
+        z-index: 999
+        cursor: pointer
+        .burger-line
+            widows: 100%
+            height: .2rem
+            background: $white
+            transition: all 200ms linear
+        
+@media screen and ( min-width: 800px )
+    body
+        #header-nav
+            #header-ul
+                display: flex
+                position: relative
+                transform: translateX(0)
+                flex-direction: row
+                justify-content: space-evenly
+                width: 100%
+                height: auto
+                margin: -2rem
+                padding: 2rem 3rem
+                background: $blue
+                li
+                    a
+                        font-weight: 700
+                        font-size: 1.25rem
+                        text-decoration: none
+                        color: $white
+                        transition: color 200ms linear
+            .burger-menu
+                display: none
