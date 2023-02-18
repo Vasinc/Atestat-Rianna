@@ -34,9 +34,6 @@ body
     .burger-line:last-of-type
         display: none
 
-.translateX-0
-    transform: translateX(0) !important 
-
 // actual styling
 #header-nav
     display: flex
@@ -50,12 +47,12 @@ body
         justify-content: center
         gap: 4rem
         width: 100%
+        max-width: 100%
         height: 100vh
         margin: -2rem
         padding: 3rem 5rem
         list-style: none
         background: lighten($blue, 10%)
-        transform: translateX(100%)
         transition: all 200ms ease-out
         z-index: 10000
         li
@@ -75,7 +72,7 @@ body
         flex-direction: column
         gap: .5rem
         width: 2rem
-        z-index: 999
+        z-index: 10001
         cursor: pointer
         .burger-line
             widows: 100%
@@ -106,6 +103,3 @@ body
                         transition: color 200ms linear
             .burger-menu
                 display: none
-        main
-            #video-section
-                eight: calc( 100vh - 5.875rem )

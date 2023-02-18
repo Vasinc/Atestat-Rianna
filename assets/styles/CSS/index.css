@@ -9,4 +9,10 @@ main #video-section video {
   height: 100%;
   display: block;
 }
+
+@media screen and (min-width: 800px) {
+  body main #video-section {
+    eight: calc( 100vh - 5.875rem);
+  }
+}
 /*# sourceMappingURL=index.css.map */
