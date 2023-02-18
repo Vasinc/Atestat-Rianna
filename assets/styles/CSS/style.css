@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .display-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -30,22 +46,6 @@
 .translateX-0 {
   -webkit-transform: translateX(0) !important;
           transform: translateX(0) !important;
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 #header-nav {
@@ -80,6 +80,7 @@ body {
           transform: translateX(100%);
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+  z-index: 10000;
 }
 
 #header-nav #header-ul li a {

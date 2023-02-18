@@ -1,5 +1,4 @@
 @import 'partials/variables'
-@import 'partials/classes'
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
@@ -16,6 +15,27 @@ body
     font-size: 100%
     box-sizing: border-box
     overflow-x: hidden
+
+// classes
+.display-flex
+    display: flex !important
+
+.display-none
+    display: none !important
+
+.display-block
+    display: block !important
+
+.burger-change
+    .burger-line:first-of-type
+        transform: rotate(45deg) translateY(.5rem)
+    .burger-line:nth-of-type(2)
+        transform: rotate(-45deg) translateY(-.5rem)
+    .burger-line:last-of-type
+        display: none
+
+.translateX-0
+    transform: translateX(0) !important 
 
 // actual styling
 #header-nav
@@ -37,6 +57,7 @@ body
         background: lighten($blue, 10%)
         transform: translateX(100%)
         transition: all 200ms ease-out
+        z-index: 10000
         li
             a
                 font-weight: 700
