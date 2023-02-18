@@ -1,3 +1,6 @@
+@import 'partials/variables'
+@import 'partials/classes'
+
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
 
@@ -13,33 +16,6 @@ body
     font-size: 100%
     box-sizing: border-box
     overflow-x: hidden
-    height: 4000px
-
-// variables
-$white: #fff
-$black: #000
-$blue: #2B5D84
-
-// classes
-.display-flex
-    display: flex !important
-
-.display-none
-    display: none !important
-
-.display-block
-    display: block !important
-
-.burger-change
-    .burger-line:first-of-type
-        transform: rotate(45deg) translateY(.5rem)
-    .burger-line:nth-of-type(2)
-        transform: rotate(-45deg) translateY(-.5rem)
-    .burger-line:last-of-type
-        display: none
-
-.translateX-0
-    transform: translateX(0) !important 
 
 // actual styling
 #header-nav
@@ -109,3 +85,6 @@ $blue: #2B5D84
                         transition: color 200ms linear
             .burger-menu
                 display: none
+        main
+            #video-section
+                eight: calc( 100vh - 5.875rem )
