@@ -6,6 +6,9 @@ const burgerMenu = document.querySelector('.burger-menu');
 function handleHeaderUl () {
     headerUl.classList.toggle('display-flex');
     burgerMenu.classList.toggle('burger-change');
+    setTimeout(() => {
+        headerUl.classList.toggle('width-100')
+    }, 1);
     if (headerUl.classList.contains('display-flex')) {
         document.body.style.overflow = 'hidden'
     } else {

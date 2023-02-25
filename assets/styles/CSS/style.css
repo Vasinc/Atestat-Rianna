@@ -43,6 +43,10 @@ body {
   display: none;
 }
 
+.width-100 {
+  width: 100% !important;
+}
+
 #header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +56,7 @@ body {
           justify-content: flex-end;
   padding: 2rem;
   background: #2B5D84;
+  min-height: 89.56px;
 }
 
 #header-nav #header-ul {
@@ -65,8 +70,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4rem;
-  width: 100%;
-  max-width: 100%;
+  width: 0;
   height: 100vh;
   margin: -2rem;
   padding: 3rem 5rem;

@@ -34,20 +34,23 @@ body
     .burger-line:last-of-type
         display: none
 
+.width-100
+    width: 100% !important
+
 // actual styling
 #header-nav
     display: flex
     justify-content: flex-end
     padding: 2rem
     background: $blue
+    min-height: 89.56px
     #header-ul
         position: absolute
         display: none
         flex-direction: column
         justify-content: center
         gap: 4rem
-        width: 100%
-        max-width: 100%
+        width: 0
         height: 100vh
         margin: -2rem
         padding: 3rem 5rem
