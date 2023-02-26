@@ -309,6 +309,23 @@ main #video-section video {
   color: gray;
 }
 
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+  background: #2B5D84;
+  color: #fff;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer .h2span {
+  color: #000;
+}
+
 @media screen and (min-width: 700px) {
   body main #hover-images-section .image-text__container .text-container p {
     padding: 3rem 1rem;

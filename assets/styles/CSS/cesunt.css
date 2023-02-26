@@ -1,0 +1,95 @@
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 3rem;
+}
+
+main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin-left: 6rem;
+  list-style: none;
+}
+
+.text-image__section {
+  max-width: 750px;
+  margin: auto;
+}
+
+.text-image__section img {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+}
+
+.text-image__section .float-left {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  clear: both;
+}
+
+.text-image__section .float-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  clear: both;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+  background: #2B5D84;
+  color: #fff;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer .h2span {
+  color: #000;
+}
+
+footer ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+footer ul li:first-of-type {
+  font-weight: 700;
+  text-align: center;
+}
+
+footer ul li:last-of-type a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+footer ul li:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 400px) {
+  main .text-image__section img {
+    width: initial;
+  }
+}
+/*# sourceMappingURL=cesunt.css.map */
