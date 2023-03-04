@@ -4,6 +4,18 @@
 .scale-1
     transform: scale(1) !important
 
+.opacity-1
+    opacity: 1 !important
+
+.list-style-none
+        list-style: none
+
+.light-blue
+    color: $lightblue
+
+.lime
+     color: $lime
+
 // actual styling
 body
     scroll-behavior: smooth
@@ -80,15 +92,19 @@ body
             padding: 2rem
             max-width: 800px
             margin: auto
+            opacity: 0
+            transition: opacity 200ms ease-out
         .bibliografie
             display: grid
             place-items: center
             padding: 3rem
-    .list-style-none
-        list-style: none
-    // .pageContent:first-of-type
-    //     display: block
-    //     transform: scale(1)
+    .float-right
+        float: right
+        margin: 0 0 1rem 1rem
+        clear: both
+    img
+        width: 100%
+        max-width: 400px
 
 footer
     display: grid

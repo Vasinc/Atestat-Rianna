@@ -3,6 +3,22 @@
           transform: scale(1) !important;
 }
 
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.light-blue {
+  color: #00a6ab;
+}
+
+.lime {
+  color: #95da3b;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -121,6 +137,9 @@ body {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 #content-section .pageContent .bibliografie {
@@ -130,8 +149,15 @@ body {
   padding: 3rem;
 }
 
-#content-section .list-style-none {
-  list-style: none;
+#content-section .float-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  clear: both;
+}
+
+#content-section img {
+  width: 100%;
+  max-width: 400px;
 }
 
 footer {

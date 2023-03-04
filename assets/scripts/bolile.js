@@ -18,6 +18,9 @@ function togglePages(idxOfPage) {
     setTimeout(() => {
         pages[idxOfPage].classList.toggle('scale-1');
     }, 200);
+    setTimeout(() => {
+        pages[idxOfPage].querySelector('.text-container').classList.toggle('opacity-1')
+    }, 600);
 }
 
 function toggleBackdrop () {
